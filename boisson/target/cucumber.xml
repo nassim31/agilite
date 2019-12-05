@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="0.0338">
+<testcase classname="F_01 Acheter une boisson" name="Acheter une bouteille." time="0.013473">
+<system-out><![CDATA[Given Mickael choisit une bouteille.........................................passed
+When Mickael passe en caisse................................................passed
+Then Mickael obtient une bouteille..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F_01 Acheter une boisson" name="Mickael ne peut pas acheter la bouteille" time="0.008801">
+<system-out><![CDATA[Given Mickael choisit une bouteille.........................................passed
+When Mickael passe en caisse................................................passed
+Then Achat refuse avec le message pas assez d'argent........................passed
+]]></system-out>
+</testcase>
+<testcase classname="F_02 Boire une potion" name="Super-Nassim boit une potion" time="0.004325">
+<system-out><![CDATA[Given Super-Nassim veut boire une potion de vie.............................passed
+When Super-Nassim trouve une potion de vie dans son inventaire..............passed
+Then Super-Nassim consomme la premiere potion qui correspond a ses besoins..passed
+]]></system-out>
+</testcase>
+<testcase classname="F_02 Boire une potion" name="Super-Nassim n'a pas de potion correspondante" time="0.001816">
+<system-out><![CDATA[Given Super-Nassim veut boire une potion de vie mais n'en possede pas.......passed
+When Super-Nassim ne trouve pas de potion de vie dans son inventaire........passed
+Then Super-Nassim achete potion de vie......................................passed
+And Super-Nassim consomme la potion.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F_02 Boire une potion" name="Super-Nassim n'a pas de potion et n'a pas d'argent pour en acheter" time="0.005385">
+<system-out><![CDATA[Given Super-Nassim veut boire une potion de force...........................passed
+When Super-Nassim ne trouve pas de potion de force dans son inventaire......passed
+Then Super-Nassim essaie d'acheter une potion de force......................passed
+And L'achat est refuse......................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
